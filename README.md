@@ -47,14 +47,27 @@ Aplikasi akan otomatis terbuka di browser:
 ---
 
 ## 📷 Preview
+
+<div align="center">
+
 ### Input Data Rumah
-![Sidebar Input](assets/sidebar.png)
+<img src="assets/sidebar.png" alt="Sidebar Input" width="400"/>
+
+---
 
 ### Hasil Prediksi
-![Prediction](assets/prediction.png)
+<div style="display: flex; justify-content: center; gap: 10px;">
+  <img src="assets/prediction.png" alt="Prediction" width="400"/>
+  <img src="assets/prediction1.png" alt="Prediction 2" width="400"/>
+</div>
+
+---
 
 ### Faktor yang Mempengaruhi Harga
-![Feature Importance](assets/importance.png)
+<img src="assets/importance.png" alt="Feature Importance" width="500"/>
+
+</div>
+
 
 ---
 
