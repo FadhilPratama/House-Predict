@@ -76,7 +76,7 @@ with col1:
 
     # Prediksi vs Aktual
     st.subheader("📈 Prediksi vs Aktual")
-    fig_scatter, ax = plt.subplots(figsize=(5, 5))
+    fig_scatter, ax = plt.subplots(figsize=(3, 3))
     ax.scatter(y_test, y_pred, alpha=0.5)
     ax.set_xlabel("Harga Aktual (100k USD)")
     ax.set_ylabel("Harga Prediksi (100k USD)")
@@ -87,7 +87,8 @@ with col1:
     df_sample = df.copy()
     df_sample["Predicted"] = model.predict(X)
     df_group = df_sample.groupby("Latitude")[["MedHouseVal", "Predicted"]].mean().reset_index()
-    st.dataframe(df_group.head(10).style.format("{:.2f}"), use_container_width=True)
+    st.dataframe(df_group.head(10).style.format("{:.2f}"), width="content")
+
 
 with col2:
     st.subheader("⚖️ Feature Importance")
